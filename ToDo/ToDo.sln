@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo", "ToDo.csproj", "{67284A4C-8F34-416B-B72F-D8778460D2EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo", "ToDo.csproj", "{67284A4C-8F34-416B-B72F-D8778460D2EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "..\Entidades\Entidades.csproj", "{FDBAF9A0-D8A9-4E73-94D6-C24D46169669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "..\Entidades\Entidades.csproj", "{FDBAF9A0-D8A9-4E73-94D6-C24D46169669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "..\Infra\Infra.csproj", "{60BCBAD2-7EF4-4C0B-9F5E-713B722ADE5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "..\Infra\Infra.csproj", "{60BCBAD2-7EF4-4C0B-9F5E-713B722ADE5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "..\Dominio\Dominio.csproj", "{5C31AB7A-93F5-4F2D-9013-106F75E9A5F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "..\Dominio\Dominio.csproj", "{5C31AB7A-93F5-4F2D-9013-106F75E9A5F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apresentacao", "..\Apresentacao\Apresentacao.csproj", "{36BAE2B6-2C66-4824-8B58-2411750ED0EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apresentacao", "..\Apresentacao\Apresentacao.csproj", "{36BAE2B6-2C66-4824-8B58-2411750ED0EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{C13D3001-8F43-477F-A8EF-78D002E635DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{36BAE2B6-2C66-4824-8B58-2411750ED0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36BAE2B6-2C66-4824-8B58-2411750ED0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36BAE2B6-2C66-4824-8B58-2411750ED0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C13D3001-8F43-477F-A8EF-78D002E635DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C13D3001-8F43-477F-A8EF-78D002E635DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C13D3001-8F43-477F-A8EF-78D002E635DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C13D3001-8F43-477F-A8EF-78D002E635DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
