@@ -24,18 +24,6 @@ namespace Apresentacao.Controllers
             _IToDoServico = iToDoServico;
         }
 
-        [HttpGet("/GetTest")]
-        [Produces("application/json")]
-        public IEnumerable<ToDo> Get()
-        {
-            IList<ToDo> listaTestInterfac = new List<ToDo>
-            {
-                new ToDo { ID = 1, DataVencimento = DateTime.Now, Descricao = "Verificando API Get", Estado = Entidades.Enums.Enums.StatusToDoEnum.EmAndamento, Titulo = "Todo Test Gets"},
-            };
-            //TODO: Pegar do Domain
-            return listaTestInterfac.ToArray<ToDo>();
-        }
-
         [HttpGet("/Listar")]
         [Produces("application/json")]
         public async Task<object> Listar()
@@ -85,6 +73,7 @@ namespace Apresentacao.Controllers
         [Produces("application/json")]
         public async Task<object> GetPorStatus(StatusToDoEnum status)
         {
+            //TODO: Listar com nomes dos status
             return await _IToDO.ListaPorStatus(status);
         }
 

@@ -32,10 +32,6 @@ namespace Dominio.Servico
             {
                 await _IToDo.Add(todo);
             }
-            else
-            {
-                //Não preciso mais tá dentro de Propriedade/Mensagem: throw new Exception("Propriedades obrigatórias não preenchidas:" + todo.ToString());
-            }
         }
 
         public async Task Atualizar(ToDo todo)

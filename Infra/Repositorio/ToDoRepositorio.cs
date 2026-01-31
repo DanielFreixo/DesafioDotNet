@@ -25,7 +25,6 @@ namespace Infra.Repositorio
             //TODO: Criar no Projeto Helper.DateTime
             DateTime agora = DateTime.Now;
             DateTime dataFimDoDia = new DateTime(agora.Year, agora.Month, agora.Day, 23, 59, 59, DateTimeKind.Local);
-            //string dataFormatada = dataFimDoDia.ToString(FORMATO_DATA_HORA);
             return dataFimDoDia;
         }
         private string GetDataHojeSemHoraStr()
@@ -36,6 +35,7 @@ namespace Infra.Repositorio
         }
         private bool IsNull(DateTime data)
         {
+            //TODO: Criar no Projeto Helper.DateTime
             return (data.Year == 1 && data.Month == 1 & data.Day == 1);
         }
 
@@ -53,7 +53,7 @@ namespace Infra.Repositorio
         {
             using (var banco = new ContextBase(_OptionsBuiler))
             {
-                ///Era pra fazer assim mas o Tio SqLite não possui data... talvez depois trans
+                ///Era pra fazer assim mas o Tio SqLite não possui data... mudar pra MySQL? Resolvido: Microsoft.Data.Sqlite
                 return await (from td in banco.ToDo
                               where td.Estado != Enums.StatusToDoEnum.Concluido &&  GetDataHojeSemHora() > td.DataVencimento
                               select td).AsNoTracking().ToListAsync();
