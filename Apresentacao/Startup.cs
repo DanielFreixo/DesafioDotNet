@@ -18,6 +18,7 @@ using Dominio.Interfaces.IGenericas;
 using Dominio.Interfaces.IToDo;
 using Dominio.Interfaces.InterfaceServicos;
 using Dominio.Servico;
+using System.Text.Json.Serialization;
 
 namespace Apresentacao
 {
@@ -34,10 +35,11 @@ namespace Apresentacao
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter())); //Para aparecer as descrições dos Status
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Apresentacao", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Apresentacao", Version = "v1" });                
             });
             services.AddDbContext<ContextBase>(options =>
             options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));

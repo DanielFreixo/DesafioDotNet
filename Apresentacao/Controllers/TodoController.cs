@@ -43,6 +43,7 @@ namespace Apresentacao.Controllers
         [Produces("application/json")]
         public async Task<object> Atualizar(ToDo todo)
         {
+            //TODO: Verificar se existe antes de atualizar
             await _IToDoServico.Atualizar(todo);
             return Task.FromResult(todo);
         }
@@ -51,6 +52,7 @@ namespace Apresentacao.Controllers
         [Produces("application/json")]
         public async Task<object> Remover(ToDo todo)
         {
+            //TODO: Verificar se existe antes de remover
             await _IToDoServico.Remover(todo);
             return Task.FromResult(todo);
         }
