@@ -2,6 +2,7 @@ C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\bin\Debug\net5.0\ToDo.deps.json
 C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\bin\Debug\net5.0\ToDo.dll
 C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\bin\Debug\net5.0\ref\ToDo.dll
 C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\bin\Debug\net5.0\ToDo.pdb
+C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\obj\Debug\net5.0\ToDo.csproj.AssemblyReference.cache
 C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\obj\Debug\net5.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\obj\Debug\net5.0\ToDo.AssemblyInfoInputs.cache
 C:\Users\mrxal\source\repos\DesafioDotNet\ToDo\obj\Debug\net5.0\ToDo.AssemblyInfo.cs
